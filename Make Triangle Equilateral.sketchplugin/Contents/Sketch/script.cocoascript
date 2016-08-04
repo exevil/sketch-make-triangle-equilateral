@@ -1,7 +1,16 @@
 var onRun = function(context) {
-  var selection = context.selection
-var width = selection.firstObject().frame().size().width
-var newHeight = width * 1.732 / 2
-
-selection.firstObject().frame().setSize(NSMakeSize(width,newHeight))
+    var frame = context.selection.firstObject().frame()
+    var width = frame.size().width
+    var newHeight = width * 1.732 / 2
+    
+    // Checking if Constrain Proportions Mode is enabled and disables it with saving the original value
+    var constrainProportions = frame.constrainProportions
+    if (frame.constrainProportions) {
+        frame.constrainProportions = false
+    }
+    
+    frame.setSize(NSMakeSize(width,newHeight))
+    
+    // Getting the Constrain Proportions original value back
+    frame.constrainProportions = constrainProportions
 };
