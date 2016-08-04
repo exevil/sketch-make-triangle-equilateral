@@ -1,0 +1,7 @@
+var onRun = function(context) {
+  var selection = context.selection
+var width = selection.firstObject().frame().size().width
+var newHeight = width * 1.732 / 2
+
+selection.firstObject().frame().setSize(NSMakeSize(width,newHeight))
+};

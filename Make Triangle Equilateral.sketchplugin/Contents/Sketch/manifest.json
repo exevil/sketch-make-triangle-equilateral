@@ -1,0 +1,24 @@
+{
+  "author" : "",
+  "commands" : [
+    {
+      "script" : "script.cocoascript",
+      "name" : "Make Triangle Equilateral",
+      "handlers" : {
+        "run" : "onRun"
+      },
+      "identifier" : "com.bohemiancoding.sketch.runscriptidentifier"
+    }
+  ],
+  "menu" : {
+    "items" : [
+      "com.bohemiancoding.sketch.runscriptidentifier"
+    ],
+    "title" : "Make Triangle Equilateral"
+  },
+  "identifier" : "com.example.sketch.002590aa-b636-4e8e-9875-7de01638e9d9",
+  "version" : "1.0",
+  "description" : "",
+  "authorEmail" : "",
+  "name" : "Make Triangle Equilateral"
+}
